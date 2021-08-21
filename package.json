@@ -1,0 +1,21 @@
+{
+    "name": "KoNekoBot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "Koneko#5050",
+    "license": "ISC",
+    "dependencies": {
+      "discord.js": "latest",
+      "discord.js-commando": "latest",
+      "express": "latest",
+      "moment": "latest",
+      "random-puppy": "latest"
+    }
+  }
+  
