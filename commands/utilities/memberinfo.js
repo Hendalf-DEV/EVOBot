@@ -1,6 +1,7 @@
-  
 const Discord = require('discord.js');
 const moment = require('moment');
+const config = require("../../config.json");
+
 
 module.exports.run = async (bot, message, args) => {
 
@@ -41,7 +42,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "memberinfo",
     description: "Shows the information of a member/user",
-    usage: "-memberinfo",
+    usage: `${config.prefix}memberinfo`,
     accessableby: "Members",
     aliases: ['userinfo']
 }

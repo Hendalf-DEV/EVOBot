@@ -43,9 +43,9 @@ bot.on('ready', async() =>{
     let allusers = bot.users.cache.size
     let servers = bot.users.cache.size
     const activities_list = [
-      "-help",
+      `${config.prefix}help`,
       `Watching ${bot.guilds.cache.size} servers`,
-      `-help for commands`
+      `${config.prefix}help for commands`
     ];
     console.log('Ready!')
     setInterval(() => {
@@ -70,12 +70,11 @@ bot.on("guildCreate", guild => {
     .setAuthor(bot.user.tag, bot.user.displayAvatarURL())
     .setDescription('Thanks for inviting me to this server!')
     .addFields(
-        { name: 'My prefix is', value: '-', inline: false },
-        { name: 'To get more info use', value: '-info', inline: true },
-        { name: 'Please create chanenel welcome', value: 'All members that will be join in server automatically get role Member if you have channel welcome', inline: true }
+        { name: 'My prefix is', value: `${config.prefix}`, inline: false },
+        { name: 'To get more info use', value: `${config.prefix}info`, inline: true },
         )
-    .setFooter('Stromy bot created with love by Stormy developers')
-    .setColor('#00FFFF')
+    .setFooter(`${message.member.username}`)
+    .setColor('RANDOM')
     const channel = guild.channels.cache.find(channel => channel.type === 'text' && channel.permissionsFor(guild.me).has('SEND_MESSAGES'))
     channel.send(embed)
 });

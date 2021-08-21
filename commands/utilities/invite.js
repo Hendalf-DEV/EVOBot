@@ -1,4 +1,5 @@
 const Discord = require ("discord.js");
+const config = require("../../config.json");
 
 module.exports.run = async (bot, message, args) => {
     
@@ -18,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "invite",
     description: "Show bot invite and support server",
-    usage: "-invite",
+    usage: `${config.prefix}invite`,
     accessableby: "Member",
     aliases: ['invite']
 }

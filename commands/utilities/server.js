@@ -1,4 +1,5 @@
 const Discord = require ("discord.js");
+const config = require("../../config.json");
 
 module.exports.run = async (bot, message, args) => {
 
@@ -22,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
     module.exports.config = {
     name: "Server info",
     description: "Shows info about server",
-    usage: "-server",
+    usage: `${config.prefix}server`,
     accessableby: "Members",
-    aliases: ['server']
+    aliases: ['server', 'info']
 }

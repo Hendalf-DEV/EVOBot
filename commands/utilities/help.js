@@ -1,4 +1,5 @@
 const Discord = require("discord.js")
+const config = require("../../config.json");
 
 module.exports.run = async (bot, message, args) => {
 
@@ -78,7 +79,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "help",
     description: "Show commands",
-    usage: "-help",
+    usage: `${config.prefix}help`,
     accessableby: "Member",
     aliases: ['help']
 }

@@ -1,3 +1,5 @@
+const config = require("../../config.json");
+
 module.exports.run = async (bot, message, args) => {
 
     if (message.deletable) {
@@ -24,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "kick",
     description: "Kicks a user",
-    usage: "-kick",
+    usage: `${config.prefix}kick`,
     accessableby: "Admins",
     aliases: []
 }

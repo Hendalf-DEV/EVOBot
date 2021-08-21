@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const botconfig = require("../../config.json");
+const config = require("../../config.json");
 
 module.exports.run = async (bot, message, args) => {
 
@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "ban",
     description: "Bans a Users",
-    usage: "-ban",
+    usage: `${config.prefix}ban`,
     accessableby: "Stuff",
     aliases: ['Ban']
 }

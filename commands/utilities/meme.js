@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const randomPuppy = require('random-puppy');
+const config = require("../../config.json");
 
 module.exports.run = async (bot, message, args) => {
 
@@ -23,7 +24,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "meme",
     description: "",
-    usage: "-meme",
+    usage: `${config.prefix}meme`,
     accessableby: "Members",
     aliases: []
 }

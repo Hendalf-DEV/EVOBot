@@ -1,3 +1,5 @@
+const config = require("../../config.json");
+
 module.exports.run = async (bot, message, args) => {
 
     if (message.deletable) {
@@ -16,7 +18,7 @@ message.channel.send("Pinging...").then(m => {
 module.exports.config = {
     name: "Ping",
     description: "Shows bot ping",
-    usage: "-ping",
+    usage: `${config.prefix}ping`,
     accessableby: "Members",
     aliases: ['ping']
 }

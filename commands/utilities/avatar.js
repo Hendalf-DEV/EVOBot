@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const config = require("../../config.json");
 
 module.exports.run = async (bot, message, args) => {
     
@@ -17,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "avatar",
     description: "Shows user avatar",
-    usage: "-avatar",
+    usage: `${config.prefix}avatar`,
     accessableby: "Member",
     aliases: ['av', 'avatar', 'logo']
 }
