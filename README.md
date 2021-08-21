@@ -4,8 +4,8 @@ Hi! I'm bot designed to play music and also have a fun and utility commands. So 
 
 # Config.json
 ```
- {
-		"token":  "Your-Token",
-		"prefix":  "Prefix"
-	}
+{
+	"token":  "Your-Token",
+	"prefix":  "Prefix"
+}
 ```
