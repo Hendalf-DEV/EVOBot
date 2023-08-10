@@ -8,7 +8,7 @@
       "start": "node index.js"
     },
     "keywords": [],
-    "author": "Koneko#5050",
+    "author": "",
     "license": "ISC",
     "dependencies": {
       "discord.js": "latest",
